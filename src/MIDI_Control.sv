@@ -18,17 +18,45 @@ always_ff @ (posedge clk)
 		state <= IDLE;
 	else
 		case (state)
-			IDLE:	state <= Din_rdy ? RX_S : IDLE;
-			RX_S:	state <= status ? STATUS : ERROR;
+			IDLE:	
+				if(Din_rdy)
+					state <= RX_S;
+				else	
+					state <= IDLE;
+			RX_S:
+				if(status)
+					state <= STATUS;
+				else	
+					state <= ERROR;
 			STATUS:	state <= WAIT1;
-			WAIT1:	state <= Din_rdy ? RX_D1 : WAIT1;
-			RX_D1:	state <= data ? D1 : ERROR;
+			WAIT1:
+				if(Din_rdy)
+					state <= RX_D1;
+				else	
+					state <= WAIT1;
+			RX_D1:
+				if(data)
+					state <= D1;
+				else	
+					state <= ERROR;
 			D1:		state <= WAIT2;
-			WAIT2:	state <= Din_rdy ? RX_D2 : WAIT2;
-			RX_D2:	state <= data ? D2 : ERROR;
+			WAIT2:
+				if(Din_rdy)
+					state <= RX_D2;
+				else	
+					state <= WAIT2;
+			RX_D2:
+				if(data)
+					state <= D2;
+				else	
+					state <= ERROR;
 			D2:		state <= FIN;
 			FIN:	state <= IDLE; 
-			ERROR:	state <= Din_rdy ? RX_S : ERROR;
+			ERROR:
+				if(Din_rdy)
+					state <= RX_S;
+				else	
+					state <= ERROR;
 			default:state <= IDLE;
 		endcase 
 

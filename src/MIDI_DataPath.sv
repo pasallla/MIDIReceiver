@@ -1,3 +1,5 @@
+import constantsMIDI::*;
+
 module MIDI_DataPath(
 	input clk,
 	input rst_n,
@@ -14,9 +16,6 @@ module MIDI_DataPath(
 	output logic status,
 	output logic data
 );
-
-parameter NOTE_ON = 1;
-parameter NOTE_OFF = 0;
 
 logic [2:0] inst;
 

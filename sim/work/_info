@@ -8,103 +8,179 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/pausa/OneDrive - UPV/UPV/Clases/ISC/PD2
-vMIDI_Control
+XconstantsMIDI
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1633348094
+Z1 !s110 1634196443
 !i10b 1
-!s100 WOQ[Ig?^]H<EIG_MQ44nF2
-I]n[<4I[[Aj9nh2gX6?jJd3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-!s105 MIDI_Control_sv_unit
+!s100 Z;WGJ[Sim1D:45_UJd_`83
+I^hYUNe`>YY[2mLC@[l=5;1
+V^hYUNe`>YY[2mLC@[l=5;1
 S1
-Z3 dC:/Users/pausa/Documents/Treballant/MIDI_receiver/sim
-w1633345789
-8C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Control.sv
-FC:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Control.sv
+Z2 dD:/pasallla/MIDIReceiver/sim
+w1634196165
+8D:/pasallla/MIDIReceiver/src/constantsMIDI.sv
+FD:/pasallla/MIDIReceiver/src/constantsMIDI.sv
 L0 1
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1633348094.000000
-!s107 C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Control.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Control.sv|
+Z4 !s108 1634196443.000000
+!s107 D:/pasallla/MIDIReceiver/src/constantsMIDI.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/pasallla/MIDIReceiver/src/constantsMIDI.sv|
 !i113 1
-Z6 o-work work -sv
-Z7 tCvgOpt 0
-n@m@i@d@i_@control
-vMIDI_DataPath
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+nconstants@m@i@d@i
+vMIDI_Control
 R0
 R1
 !i10b 1
-!s100 WWIfMaXdZaeRjMTiO;MYo3
-IMCZXS8BoH_kDT6cj@nlZa3
-R2
-!s105 MIDI_DataPath_sv_unit
+!s100 Gjd6e?3fF6^^7d=jcf[4A2
+IZ_RS_TKBP1EFIFJBB6`@A2
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+!s105 MIDI_Control_sv_unit
 S1
-R3
-w1633347677
-8C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_DataPath.sv
-FC:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_DataPath.sv
+R2
+w1634196074
+8D:/pasallla/MIDIReceiver/src/MIDI_Control.sv
+FD:/pasallla/MIDIReceiver/src/MIDI_Control.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_DataPath.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_DataPath.sv|
+R4
+!s107 D:/pasallla/MIDIReceiver/src/MIDI_Control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/pasallla/MIDIReceiver/src/MIDI_Control.sv|
 !i113 1
+R5
 R6
+n@m@i@d@i_@control
+vMIDI_DataPath
+R0
+Z8 DXx4 work 13 constantsMIDI 0 22 ^hYUNe`>YY[2mLC@[l=5;1
+DXx4 work 21 MIDI_DataPath_sv_unit 0 22 @LRjX]FQ<EOND=O4i:mld2
 R7
+r1
+!s85 0
+31
+!i10b 1
+!s100 J@jU:]6hlMdE`[ec_<=0@3
+I8K8ReO@bzV4=:<RiHlL?]0
+!s105 MIDI_DataPath_sv_unit
+S1
+R2
+Z9 w1634196189
+Z10 8D:/pasallla/MIDIReceiver/src/MIDI_DataPath.sv
+Z11 FD:/pasallla/MIDIReceiver/src/MIDI_DataPath.sv
+L0 3
+R3
+R4
+Z12 !s107 D:/pasallla/MIDIReceiver/src/MIDI_DataPath.sv|
+Z13 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/pasallla/MIDIReceiver/src/MIDI_DataPath.sv|
+!i113 1
+R5
+R6
 n@m@i@d@i_@data@path
+XMIDI_DataPath_sv_unit
+R0
+R8
+V@LRjX]FQ<EOND=O4i:mld2
+r1
+!s85 0
+31
+!i10b 1
+!s100 VnS0T?6SI=i?IcIz1hog<2
+I@LRjX]FQ<EOND=O4i:mld2
+!i103 1
+S1
+R2
+R9
+R10
+R11
+L0 1
+R3
+R4
+R12
+R13
+!i113 1
+R5
+R6
+n@m@i@d@i_@data@path_sv_unit
 vMIDI_Receiver
 R0
 R1
 !i10b 1
 !s100 ZW:7TReoVGE7O0FAQ26NL3
-IF2b^01Yj5V;l9c[D;1O=b1
-R2
+IPXGS0o52YjbodJoXG]ZUM1
+R7
 !s105 MIDI_Receiver_sv_unit
 S1
-R3
-w1633345468
-8C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Receiver.sv
-FC:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Receiver.sv
+R2
+w1634195715
+8D:/pasallla/MIDIReceiver/src/MIDI_Receiver.sv
+FD:/pasallla/MIDIReceiver/src/MIDI_Receiver.sv
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Receiver.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Receiver.sv|
+R4
+!s107 D:/pasallla/MIDIReceiver/src/MIDI_Receiver.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/pasallla/MIDIReceiver/src/MIDI_Receiver.sv|
 !i113 1
+R5
 R6
-R7
 n@m@i@d@i_@receiver
 vMIDI_Receiver_TB
 R0
-R1
-!i10b 1
-!s100 l[_8OP:?_<zkn:BP2nhH93
-I9]HnaGCGTjDLDMXb_8TPR3
-R2
-!s105 MIDI_Receiver_TB_sv_unit
-S1
-R3
-w1633348089
-8C:/Users/pausa/Documents/Treballant/MIDI_receiver/sim/MIDI_Receiver_TB.sv
-FC:/Users/pausa/Documents/Treballant/MIDI_receiver/sim/MIDI_Receiver_TB.sv
-L0 2
-R4
+R8
+DXx4 work 24 MIDI_Receiver_TB_sv_unit 0 22 d:B;kUn?DNnH1EE_9[XZo1
+R7
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/pausa/Documents/Treballant/MIDI_receiver/sim/MIDI_Receiver_TB.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pausa/Documents/Treballant/MIDI_receiver/sim/MIDI_Receiver_TB.sv|
+!i10b 1
+!s100 Pe`8hNSNOW@?dn;38Th>P2
+I?o;MRQlELSIP]fH3]MOW?2
+!s105 MIDI_Receiver_TB_sv_unit
+S1
+R2
+Z14 w1634196436
+Z15 8D:/pasallla/MIDIReceiver/sim/MIDI_Receiver_TB.sv
+Z16 FD:/pasallla/MIDIReceiver/sim/MIDI_Receiver_TB.sv
+L0 5
+R3
+R4
+Z17 !s107 D:/pasallla/MIDIReceiver/sim/MIDI_Receiver_TB.sv|
+Z18 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/pasallla/MIDIReceiver/sim/MIDI_Receiver_TB.sv|
 !i113 1
+R5
 R6
-R7
 n@m@i@d@i_@receiver_@t@b
+XMIDI_Receiver_TB_sv_unit
+R0
+R8
+Vd:B;kUn?DNnH1EE_9[XZo1
+r1
+!s85 0
+31
+!i10b 1
+!s100 XiGI_mDB7?=@i=CDGRD6o3
+Id:B;kUn?DNnH1EE_9[XZo1
+!i103 1
+S1
+R2
+R14
+R15
+R16
+L0 3
+R3
+R4
+R17
+R18
+!i113 1
+R5
+R6
+n@m@i@d@i_@receiver_@t@b_sv_unit

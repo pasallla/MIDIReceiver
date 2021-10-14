@@ -1,11 +1,11 @@
 `timescale 1ns/1ps
+
+import constantsMIDI::*;
+
 module MIDI_Receiver_TB();
 	parameter PER = 10; //Periodo Reloj
 	parameter RET = 1; //Retardo
 
-
-	parameter NOTE_ON = 1;
-	parameter NOTE_OFF = 0;
 
 	// Control
 	logic clk = 1'b0;

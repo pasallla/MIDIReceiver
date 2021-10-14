@@ -1,0 +1,40 @@
+D:/pasallla/MIDIReceiver/sim/MIDI_Receiver_TB.sv {1 {vlog -work work -sv -stats=none D:/pasallla/MIDIReceiver/sim/MIDI_Receiver_TB.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package MIDI_Receiver_TB_sv_unit
+-- Importing package constantsMIDI
+-- Compiling module MIDI_Receiver_TB
+
+Top level modules:
+	MIDI_Receiver_TB
+
+} {} {}} D:/pasallla/MIDIReceiver/src/MIDI_DataPath.sv {1 {vlog -work work -sv -stats=none D:/pasallla/MIDIReceiver/src/MIDI_DataPath.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package MIDI_DataPath_sv_unit
+-- Importing package constantsMIDI
+-- Compiling module MIDI_DataPath
+
+Top level modules:
+	MIDI_DataPath
+
+} {} {}} D:/pasallla/MIDIReceiver/src/MIDI_Control.sv {1 {vlog -work work -sv -stats=none D:/pasallla/MIDIReceiver/src/MIDI_Control.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIDI_Control
+
+Top level modules:
+	MIDI_Control
+
+} {} {}} D:/pasallla/MIDIReceiver/src/MIDI_Receiver.sv {1 {vlog -work work -sv -stats=none D:/pasallla/MIDIReceiver/src/MIDI_Receiver.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIDI_Receiver
+
+Top level modules:
+	MIDI_Receiver
+
+} {} {}} D:/pasallla/MIDIReceiver/src/constantsMIDI.sv {1 {vlog -work work -sv -stats=none D:/pasallla/MIDIReceiver/src/constantsMIDI.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package constantsMIDI
+
+Top level modules:
+	--none--
+
+} {} {}}
