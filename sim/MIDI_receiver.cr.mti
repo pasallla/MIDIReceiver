@@ -1,0 +1,29 @@
+C:/Users/pausa/Documents/Treballant/MIDI_receiver/sim/MIDI_Receiver_TB.sv {1 {vlog -work work -sv -stats=none C:/Users/pausa/Documents/Treballant/MIDI_receiver/sim/MIDI_Receiver_TB.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIDI_Receiver_TB
+
+Top level modules:
+	MIDI_Receiver_TB
+
+} {} {}} C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_DataPath.sv {1 {vlog -work work -sv -stats=none C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_DataPath.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIDI_DataPath
+
+Top level modules:
+	MIDI_DataPath
+
+} {} {}} C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Control.sv {1 {vlog -work work -sv -stats=none C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Control.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIDI_Control
+
+Top level modules:
+	MIDI_Control
+
+} {} {}} C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Receiver.sv {1 {vlog -work work -sv -stats=none C:/Users/pausa/Documents/Treballant/MIDI_receiver/src/MIDI_Receiver.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIDI_Receiver
+
+Top level modules:
+	MIDI_Receiver
+
+} {} {}}
