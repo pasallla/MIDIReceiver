@@ -1,0 +1,1416 @@
+
+<style>
+.hljs {
+  color: #383a42;
+  background: #fafafa;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string {
+  color: #50a14f;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+#descriptions{
+  margin-left:5.5%;
+  margin-right:3%;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body table {
+  width:100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body th {
+    background-color: #ffd78c;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-top: 8px!important;
+  margin-bottom: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: 700;
+  color: #22863a;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: 700;
+  color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+.markdown-body .pl-mb {
+  font-weight: 700;
+  color: #24292e;
+}
+
+.markdown-body .pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+  font-weight: 700;
+  color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+}
+
+.markdown-body .my-2 {
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  width:100%;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  padding-bottom: .3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-size: .85em;
+  color: #6a737d;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: initial;
+  background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+.markdown-body .commit-tease-sha {
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 90%;
+  color: #444d56;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+.markdown-body .blob-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  width: 1%;
+  min-width: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(27,31,35,.3);
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  overflow: visible;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  color: #24292e;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+.markdown-body .description {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+</style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>TerosHDL</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+  </style>
+  </head>
+  <body>
+  <article class="markdown-body">
+
+<div id="teroshdl" class='templateTerosHDL'>
+<a id=MIDI_Control><h1 id="entity-midi_control">Entity: MIDI_Control</h1></a><ul>
+<li><strong>File</strong>: MIDI_Control.sv</li>
+</ul><h2 id="diagram">Diagram</h2><p><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0 345 130"><svg id="SvgjsSvg1002" width="2" height="0" focusable="false" style="overflow:hidden;top:-100%;left:-100%;position:absolute;opacity:0"><polyline id="SvgjsPolyline1003" points="45,0 60,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><rect id="SvgjsRect1006" width="240" height="110" fill="black" x="60" y="15"></rect><rect id="SvgjsRect1007" width="236" height="105" fill="#fdfd96" x="62" y="17"></rect><text id="SvgjsText1008" font-family="Helvetica" x="40" y="9.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1009" dy="26" x="40" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1010" font-family="Helvetica" x="75" y="9.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1011" dy="26" x="75" svgjs:data="{&quot;newLined&quot;:true}">   clk </tspan></text><line id="SvgjsLine1012" x1="45" y1="30" x2="60" y2="30" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1013" font-family="Helvetica" x="40" y="29.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1014" dy="26" x="40" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1015" font-family="Helvetica" x="75" y="29.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1016" dy="26" x="75" svgjs:data="{&quot;newLined&quot;:true}">   rst_n </tspan></text><line id="SvgjsLine1017" x1="45" y1="50" x2="60" y2="50" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1018" font-family="Helvetica" x="40" y="49.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1019" dy="26" x="40" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1020" font-family="Helvetica" x="75" y="49.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1021" dy="26" x="75" svgjs:data="{&quot;newLined&quot;:true}">   Din_rdy </tspan></text><line id="SvgjsLine1022" x1="45" y1="70" x2="60" y2="70" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1023" font-family="Helvetica" x="40" y="69.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1024" dy="26" x="40" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1025" font-family="Helvetica" x="75" y="69.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1026" dy="26" x="75" svgjs:data="{&quot;newLined&quot;:true}">   status </tspan></text><line id="SvgjsLine1027" x1="45" y1="90" x2="60" y2="90" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1028" font-family="Helvetica" x="40" y="89.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1029" dy="26" x="40" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1030" font-family="Helvetica" x="75" y="89.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1031" dy="26" x="75" svgjs:data="{&quot;newLined&quot;:true}">   data </tspan></text><line id="SvgjsLine1032" x1="45" y1="110" x2="60" y2="110" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1033" font-family="Helvetica" x="320" y="9.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1034" dy="26" x="320" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1035" font-family="Helvetica" x="285" y="9.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1036" dy="26" x="285" svgjs:data="{&quot;newLined&quot;:true}">   ld_status </tspan></text><line id="SvgjsLine1037" x1="300" y1="30" x2="315" y2="30" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1038" font-family="Helvetica" x="320" y="29.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1039" dy="26" x="320" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1040" font-family="Helvetica" x="285" y="29.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1041" dy="26" x="285" svgjs:data="{&quot;newLined&quot;:true}">   ld_data1 </tspan></text><line id="SvgjsLine1042" x1="300" y1="50" x2="315" y2="50" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1043" font-family="Helvetica" x="320" y="49.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1044" dy="26" x="320" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1045" font-family="Helvetica" x="285" y="49.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1046" dy="26" x="285" svgjs:data="{&quot;newLined&quot;:true}">   ld_data2 </tspan></text><line id="SvgjsLine1047" x1="300" y1="70" x2="315" y2="70" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1048" font-family="Helvetica" x="320" y="69.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1049" dy="26" x="320" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1050" font-family="Helvetica" x="285" y="69.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1051" dy="26" x="285" svgjs:data="{&quot;newLined&quot;:true}">   rdy_out </tspan></text><line id="SvgjsLine1052" x1="300" y1="90" x2="315" y2="90" stroke-linecap="rec" stroke="black" stroke-width="5"></line><text id="SvgjsText1053" font-family="Helvetica" x="320" y="89.3015625" font-size="20" text-anchor="start" family="Helvetica" size="20" anchor="start" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1054" dy="26" x="320" svgjs:data="{&quot;newLined&quot;:true}">    </tspan></text><text id="SvgjsText1055" font-family="Helvetica" x="285" y="89.3015625" font-size="20" text-anchor="end" family="Helvetica" size="20" anchor="end" svgjs:data="{&quot;leading&quot;:&quot;1.3&quot;}"><tspan id="SvgjsTspan1056" dy="26" x="285" svgjs:data="{&quot;newLined&quot;:true}">   error </tspan></text><line id="SvgjsLine1057" x1="300" y1="110" x2="315" y2="110" stroke-linecap="rec" stroke="black" stroke-width="5"></line></svg></p><h2 id="ports">Ports</h2>
+<table>
+<thead>
+<tr>
+<th id="port_name">Port name</th>
+<th id="direction">Direction</th>
+<th id="type">Type</th>
+<th id="description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clk</td>
+<td>input</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>rst_n</td>
+<td>input</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Din_rdy</td>
+<td>input</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td>input</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>data</td>
+<td>input</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ld_status</td>
+<td>output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ld_data1</td>
+<td>output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ld_data2</td>
+<td>output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>rdy_out</td>
+<td>output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>error</td>
+<td>output</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="signals">Signals</h2>
+<table>
+<thead>
+<tr>
+<th id="name">Name</th>
+<th id="type">Type</th>
+<th id="description">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>state</td>
+<td>enum logic [3:0] {<br><span style="padding-left:20px">IDLE,<br><span style="padding-left:20px"> RX_S,<br><span style="padding-left:20px"> STATUS,<br><span style="padding-left:20px"> WAIT1,<br><span style="padding-left:20px"> RX_D1,<br><span style="padding-left:20px"> D1,<br><span style="padding-left:20px"> WAIT2,<br><span style="padding-left:20px"> RX_D2,<br><span style="padding-left:20px"> D2,<br><span style="padding-left:20px"> FIN,<br><span style="padding-left:20px"> ERROR}</td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="processes">Processes</h2><ul>
+<li>unnamed: ( @ (posedge clk) )</li>
+</ul><div id="descriptions"><p><strong>Type:</strong> always_ff</p></div><h2 id="state-machines">State machines</h2><div><div id="state_machine"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: state transitions Pages: 1 -->
+<svg width="350pt" height="844pt"
+ viewBox="0.00 0.00 350.00 844.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 840)">
+<title>state transitions</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-840 346,-840 346,4 -4,4"/>
+<g id="clust1" class="cluster state regular">
+<title>cluster_state</title>
+<path fill="none" stroke="#000000" stroke-width="2" d="M20,-8C20,-8 322,-8 322,-8 328,-8 334,-14 334,-20 334,-20 334,-816 334,-816 334,-822 328,-828 322,-828 322,-828 20,-828 20,-828 14,-828 8,-822 8,-816 8,-816 8,-20 8,-20 8,-14 14,-8 20,-8"/>
+<text text-anchor="start" x="157.9944" y="-809.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">state</text>
+</g>
+<!-- state -->
+<!-- IDLE -->
+<g id="node2" class="node state regular">
+<title>IDLE</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="212,-790 156,-790 156,-754 212,-754 212,-790"/>
+<text text-anchor="start" x="170.6644" y="-768.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">IDLE</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M168.3333,-755C168.3333,-755 199.6667,-755 199.6667,-755 205.3333,-755 211,-760.6667 211,-766.3333 211,-766.3333 211,-777.6667 211,-777.6667 211,-783.3333 205.3333,-789 199.6667,-789 199.6667,-789 168.3333,-789 168.3333,-789 162.6667,-789 157,-783.3333 157,-777.6667 157,-777.6667 157,-766.3333 157,-766.3333 157,-760.6667 162.6667,-755 168.3333,-755"/>
+</g>
+<!-- IDLE&#45;&gt;IDLE -->
+<g id="edge2" class="edge transition">
+<title>IDLE&#45;&gt;IDLE</title>
+<path fill="none" stroke="#000000" d="M212.0183,-776.8247C223.888,-777.1883 234,-775.5801 234,-772 234,-769.5387 229.2205,-768.0094 222.3762,-767.4121"/>
+<polygon fill="#000000" stroke="#000000" points="222.0957,-763.9049 212.0183,-767.1753 221.9356,-770.903 222.0957,-763.9049"/>
+<text text-anchor="start" x="234" y="-769" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">not (Din_rdy) &#160;&#160;</text>
+</g>
+<!-- RX_S -->
+<g id="node3" class="node state regular">
+<title>RX_S</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="210,-708 154,-708 154,-672 210,-672 210,-708"/>
+<text text-anchor="start" x="166.3304" y="-686.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">RX_S</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M166.3333,-673C166.3333,-673 197.6667,-673 197.6667,-673 203.3333,-673 209,-678.6667 209,-684.3333 209,-684.3333 209,-695.6667 209,-695.6667 209,-701.3333 203.3333,-707 197.6667,-707 197.6667,-707 166.3333,-707 166.3333,-707 160.6667,-707 155,-701.3333 155,-695.6667 155,-695.6667 155,-684.3333 155,-684.3333 155,-678.6667 160.6667,-673 166.3333,-673"/>
+</g>
+<!-- IDLE&#45;&gt;RX_S -->
+<g id="edge1" class="edge transition">
+<title>IDLE&#45;&gt;RX_S</title>
+<path fill="none" stroke="#000000" d="M183.5561,-753.8015C183.3024,-743.3976 182.9786,-730.1215 182.6921,-718.3768"/>
+<polygon fill="#000000" stroke="#000000" points="186.1855,-718.0592 182.4426,-708.1476 179.1876,-718.23 186.1855,-718.0592"/>
+<text text-anchor="start" x="183" y="-728" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Din_rdy &#160;&#160;</text>
+</g>
+<!-- STATUS -->
+<g id="node4" class="node state regular">
+<title>STATUS</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="103.5,-626 34.5,-626 34.5,-590 103.5,-590 103.5,-626"/>
+<text text-anchor="start" x="45.8336" y="-604.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">STATUS</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M46.8333,-591C46.8333,-591 91.1667,-591 91.1667,-591 96.8333,-591 102.5,-596.6667 102.5,-602.3333 102.5,-602.3333 102.5,-613.6667 102.5,-613.6667 102.5,-619.3333 96.8333,-625 91.1667,-625 91.1667,-625 46.8333,-625 46.8333,-625 41.1667,-625 35.5,-619.3333 35.5,-613.6667 35.5,-613.6667 35.5,-602.3333 35.5,-602.3333 35.5,-596.6667 41.1667,-591 46.8333,-591"/>
+</g>
+<!-- RX_S&#45;&gt;STATUS -->
+<g id="edge3" class="edge transition">
+<title>RX_S&#45;&gt;STATUS</title>
+<path fill="none" stroke="#000000" d="M156.9216,-671.8015C140.829,-660.1237 119.7496,-644.8272 102.2652,-632.1393"/>
+<polygon fill="#000000" stroke="#000000" points="104.1575,-629.1881 94.0083,-626.1476 100.0462,-634.8536 104.1575,-629.1881"/>
+<text text-anchor="start" x="133" y="-646" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">status &#160;&#160;</text>
+</g>
+<!-- ERROR -->
+<g id="node12" class="node state regular">
+<title>ERROR</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="216.5,-134 151.5,-134 151.5,-98 216.5,-98 216.5,-134"/>
+<text text-anchor="start" x="162.837" y="-112.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">ERROR</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M163.8333,-99C163.8333,-99 204.1667,-99 204.1667,-99 209.8333,-99 215.5,-104.6667 215.5,-110.3333 215.5,-110.3333 215.5,-121.6667 215.5,-121.6667 215.5,-127.3333 209.8333,-133 204.1667,-133 204.1667,-133 163.8333,-133 163.8333,-133 158.1667,-133 152.5,-127.3333 152.5,-121.6667 152.5,-121.6667 152.5,-110.3333 152.5,-110.3333 152.5,-104.6667 158.1667,-99 163.8333,-99"/>
+</g>
+<!-- RX_S&#45;&gt;ERROR -->
+<g id="edge4" class="edge transition">
+<title>RX_S&#45;&gt;ERROR</title>
+<path fill="none" stroke="#000000" d="M181.361,-671.6336C181.165,-664.56 181,-656.405 181,-649 181,-649 181,-649 181,-552.5 181,-482.0851 122.6997,-461.6287 150.653,-397 184.2704,-319.2758 276,-338.1828 276,-253.5 276,-253.5 276,-253.5 276,-157 276,-145.2427 250.6151,-134.5244 226.5138,-126.9977"/>
+<polygon fill="#000000" stroke="#000000" points="227.2778,-123.5733 216.6948,-124.074 225.2801,-130.2823 227.2778,-123.5733"/>
+<text text-anchor="start" x="150" y="-400" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">not (status) &#160;&#160;</text>
+</g>
+<!-- WAIT1 -->
+<g id="node5" class="node state regular">
+<title>WAIT1</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="74,-544 16,-544 16,-508 74,-508 74,-544"/>
+<text text-anchor="start" x="26.667" y="-522.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">WAIT1</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M28.3333,-509C28.3333,-509 61.6667,-509 61.6667,-509 67.3333,-509 73,-514.6667 73,-520.3333 73,-520.3333 73,-531.6667 73,-531.6667 73,-537.3333 67.3333,-543 61.6667,-543 61.6667,-543 28.3333,-543 28.3333,-543 22.6667,-543 17,-537.3333 17,-531.6667 17,-531.6667 17,-520.3333 17,-520.3333 17,-514.6667 22.6667,-509 28.3333,-509"/>
+</g>
+<!-- STATUS&#45;&gt;WAIT1 -->
+<g id="edge5" class="edge transition">
+<title>STATUS&#45;&gt;WAIT1</title>
+<path fill="none" stroke="#000000" d="M63.6736,-589.8015C60.5975,-579.2915 56.6635,-565.8503 53.2003,-554.0177"/>
+<polygon fill="#000000" stroke="#000000" points="56.4796,-552.7618 50.3115,-544.1476 49.7615,-554.7281 56.4796,-552.7618"/>
+<text text-anchor="middle" x="59.3895" y="-564" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> </text>
+</g>
+<!-- WAIT1&#45;&gt;WAIT1 -->
+<g id="edge7" class="edge transition">
+<title>WAIT1&#45;&gt;WAIT1</title>
+<path fill="none" stroke="#000000" d="M74.0927,-530.839C85.9763,-531.1423 96,-529.5293 96,-526 96,-523.5736 91.2622,-522.053 84.4395,-521.4381"/>
+<polygon fill="#000000" stroke="#000000" points="84.1828,-517.93 74.0927,-521.161 83.9954,-524.9275 84.1828,-517.93"/>
+<text text-anchor="start" x="96" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">not (Din_rdy) &#160;&#160;</text>
+</g>
+<!-- RX_D1 -->
+<g id="node6" class="node state regular">
+<title>RX_D1</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="76,-462 16,-462 16,-426 76,-426 76,-462"/>
+<text text-anchor="start" x="26.665" y="-440.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">RX_D1</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M28.3333,-427C28.3333,-427 63.6667,-427 63.6667,-427 69.3333,-427 75,-432.6667 75,-438.3333 75,-438.3333 75,-449.6667 75,-449.6667 75,-455.3333 69.3333,-461 63.6667,-461 63.6667,-461 28.3333,-461 28.3333,-461 22.6667,-461 17,-455.3333 17,-449.6667 17,-449.6667 17,-438.3333 17,-438.3333 17,-432.6667 22.6667,-427 28.3333,-427"/>
+</g>
+<!-- WAIT1&#45;&gt;RX_D1 -->
+<g id="edge6" class="edge transition">
+<title>WAIT1&#45;&gt;RX_D1</title>
+<path fill="none" stroke="#000000" d="M45.2219,-507.8015C45.3488,-497.3976 45.5107,-484.1215 45.6539,-472.3768"/>
+<polygon fill="#000000" stroke="#000000" points="49.1564,-472.1896 45.7787,-462.1476 42.1569,-472.1041 49.1564,-472.1896"/>
+<text text-anchor="start" x="45" y="-482" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Din_rdy &#160;&#160;</text>
+</g>
+<!-- D1 -->
+<g id="node7" class="node state regular">
+<title>D1</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="73,-380 17,-380 17,-344 73,-344 73,-380"/>
+<text text-anchor="start" x="37.3332" y="-358.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">D1</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M29.3333,-345C29.3333,-345 60.6667,-345 60.6667,-345 66.3333,-345 72,-350.6667 72,-356.3333 72,-356.3333 72,-367.6667 72,-367.6667 72,-373.3333 66.3333,-379 60.6667,-379 60.6667,-379 29.3333,-379 29.3333,-379 23.6667,-379 18,-373.3333 18,-367.6667 18,-367.6667 18,-356.3333 18,-356.3333 18,-350.6667 23.6667,-345 29.3333,-345"/>
+</g>
+<!-- RX_D1&#45;&gt;D1 -->
+<g id="edge8" class="edge transition">
+<title>RX_D1&#45;&gt;D1</title>
+<path fill="none" stroke="#000000" d="M45.7781,-425.8015C45.6512,-415.3976 45.4893,-402.1215 45.3461,-390.3768"/>
+<polygon fill="#000000" stroke="#000000" points="48.8431,-390.1041 45.2213,-380.1476 41.8436,-390.1896 48.8431,-390.1041"/>
+<text text-anchor="start" x="45" y="-400" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">data &#160;&#160;</text>
+</g>
+<!-- RX_D1&#45;&gt;ERROR -->
+<g id="edge9" class="edge transition">
+<title>RX_D1&#45;&gt;ERROR</title>
+<path fill="none" stroke="#000000" d="M66.0749,-425.9066C108.208,-387.0933 202,-295.9266 202,-253.5 202,-253.5 202,-253.5 202,-157 202,-152.4159 201.0449,-147.7682 199.5748,-143.3294"/>
+<polygon fill="#000000" stroke="#000000" points="202.7848,-141.9335 195.7045,-134.0519 196.3244,-144.6286 202.7848,-141.9335"/>
+<text text-anchor="start" x="200" y="-277" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">not (data) &#160;&#160;</text>
+</g>
+<!-- WAIT2 -->
+<g id="node8" class="node state regular">
+<title>WAIT2</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="74,-298 16,-298 16,-262 74,-262 74,-298"/>
+<text text-anchor="start" x="26.667" y="-276.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">WAIT2</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M28.3333,-263C28.3333,-263 61.6667,-263 61.6667,-263 67.3333,-263 73,-268.6667 73,-274.3333 73,-274.3333 73,-285.6667 73,-285.6667 73,-291.3333 67.3333,-297 61.6667,-297 61.6667,-297 28.3333,-297 28.3333,-297 22.6667,-297 17,-291.3333 17,-285.6667 17,-285.6667 17,-274.3333 17,-274.3333 17,-268.6667 22.6667,-263 28.3333,-263"/>
+</g>
+<!-- D1&#45;&gt;WAIT2 -->
+<g id="edge10" class="edge transition">
+<title>D1&#45;&gt;WAIT2</title>
+<path fill="none" stroke="#000000" d="M45,-343.8015C45,-333.3976 45,-320.1215 45,-308.3768"/>
+<polygon fill="#000000" stroke="#000000" points="48.5001,-308.1476 45,-298.1476 41.5001,-308.1476 48.5001,-308.1476"/>
+<text text-anchor="middle" x="46.3895" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> </text>
+</g>
+<!-- WAIT2&#45;&gt;WAIT2 -->
+<g id="edge12" class="edge transition">
+<title>WAIT2&#45;&gt;WAIT2</title>
+<path fill="none" stroke="#000000" d="M74.0927,-284.839C85.9763,-285.1423 96,-283.5293 96,-280 96,-277.5736 91.2622,-276.053 84.4395,-275.4381"/>
+<polygon fill="#000000" stroke="#000000" points="84.1828,-271.93 74.0927,-275.161 83.9954,-278.9275 84.1828,-271.93"/>
+<text text-anchor="start" x="96" y="-277" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">not (Din_rdy) &#160;&#160;</text>
+</g>
+<!-- RX_D2 -->
+<g id="node9" class="node state regular">
+<title>RX_D2</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="86,-216 26,-216 26,-180 86,-180 86,-216"/>
+<text text-anchor="start" x="36.665" y="-194.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">RX_D2</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M38.3333,-181C38.3333,-181 73.6667,-181 73.6667,-181 79.3333,-181 85,-186.6667 85,-192.3333 85,-192.3333 85,-203.6667 85,-203.6667 85,-209.3333 79.3333,-215 73.6667,-215 73.6667,-215 38.3333,-215 38.3333,-215 32.6667,-215 27,-209.3333 27,-203.6667 27,-203.6667 27,-192.3333 27,-192.3333 27,-186.6667 32.6667,-181 38.3333,-181"/>
+</g>
+<!-- WAIT2&#45;&gt;RX_D2 -->
+<g id="edge11" class="edge transition">
+<title>WAIT2&#45;&gt;RX_D2</title>
+<path fill="none" stroke="#000000" d="M47.4413,-261.8015C48.8369,-251.3976 50.6178,-238.1215 52.1934,-226.3768"/>
+<polygon fill="#000000" stroke="#000000" points="55.7049,-226.5242 53.5656,-216.1476 48.767,-225.5934 55.7049,-226.5242"/>
+<text text-anchor="start" x="51" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Din_rdy &#160;&#160;</text>
+</g>
+<!-- D2 -->
+<g id="node10" class="node state regular">
+<title>D2</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="106,-134 50,-134 50,-98 106,-98 106,-134"/>
+<text text-anchor="start" x="70.3332" y="-112.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">D2</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M62.3333,-99C62.3333,-99 93.6667,-99 93.6667,-99 99.3333,-99 105,-104.6667 105,-110.3333 105,-110.3333 105,-121.6667 105,-121.6667 105,-127.3333 99.3333,-133 93.6667,-133 93.6667,-133 62.3333,-133 62.3333,-133 56.6667,-133 51,-127.3333 51,-121.6667 51,-121.6667 51,-110.3333 51,-110.3333 51,-104.6667 56.6667,-99 62.3333,-99"/>
+</g>
+<!-- RX_D2&#45;&gt;D2 -->
+<g id="edge13" class="edge transition">
+<title>RX_D2&#45;&gt;D2</title>
+<path fill="none" stroke="#000000" d="M60.8825,-179.8015C63.7023,-169.2915 67.3085,-155.8503 70.4831,-144.0177"/>
+<polygon fill="#000000" stroke="#000000" points="73.9202,-144.713 73.1311,-134.1476 67.1593,-142.899 73.9202,-144.713"/>
+<text text-anchor="start" x="68" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">data &#160;&#160;</text>
+</g>
+<!-- RX_D2&#45;&gt;ERROR -->
+<g id="edge14" class="edge transition">
+<title>RX_D2&#45;&gt;ERROR</title>
+<path fill="none" stroke="#000000" d="M84.4073,-179.8015C102.8848,-167.9644 127.166,-152.4093 147.127,-139.6217"/>
+<polygon fill="#000000" stroke="#000000" points="149.1397,-142.489 155.6721,-134.1476 145.3637,-136.5948 149.1397,-142.489"/>
+<text text-anchor="start" x="128" y="-154" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">not (data) &#160;&#160;</text>
+</g>
+<!-- FIN -->
+<g id="node11" class="node state regular">
+<title>FIN</title>
+<polygon fill="#ffffff" fill-opacity="0.003922" stroke="transparent" stroke-width="2" points="287,-52 231,-52 231,-16 287,-16 287,-52"/>
+<text text-anchor="start" x="249.3358" y="-30.2" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#000000">FIN</text>
+<path fill="none" stroke="#000000" stroke-width="2" d="M243.3333,-17C243.3333,-17 274.6667,-17 274.6667,-17 280.3333,-17 286,-22.6667 286,-28.3333 286,-28.3333 286,-39.6667 286,-39.6667 286,-45.3333 280.3333,-51 274.6667,-51 274.6667,-51 243.3333,-51 243.3333,-51 237.6667,-51 232,-45.3333 232,-39.6667 232,-39.6667 232,-28.3333 232,-28.3333 232,-22.6667 237.6667,-17 243.3333,-17"/>
+</g>
+<!-- D2&#45;&gt;FIN -->
+<g id="edge15" class="edge transition">
+<title>D2&#45;&gt;FIN</title>
+<path fill="none" stroke="#000000" d="M106.2813,-103.1875C137.3628,-89.1063 187.4218,-66.4277 221.6973,-50.8996"/>
+<polygon fill="#000000" stroke="#000000" points="223.2529,-54.0373 230.9173,-46.7225 220.3642,-47.6611 223.2529,-54.0373"/>
+<text text-anchor="middle" x="181.3895" y="-72" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> </text>
+</g>
+<!-- FIN&#45;&gt;IDLE -->
+<g id="edge16" class="edge transition">
+<title>FIN&#45;&gt;IDLE</title>
+<path fill="none" stroke="#000000" d="M287.3209,-40.2427C304.837,-45.9608 324,-56.4545 324,-75 324,-253.5 324,-253.5 324,-253.5 324,-283.5033 323,-290.9967 323,-321 323,-731 323,-731 323,-731 323,-752.1067 263.2935,-763.1582 222.1432,-768.2685"/>
+<polygon fill="#000000" stroke="#000000" points="221.6533,-764.8019 212.1287,-769.4423 222.4682,-771.7543 221.6533,-764.8019"/>
+<text text-anchor="middle" x="324.3895" y="-400" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> </text>
+</g>
+<!-- ERROR&#45;&gt;RX_S -->
+<g id="edge17" class="edge transition">
+<title>ERROR&#45;&gt;RX_S</title>
+<path fill="none" stroke="#000000" d="M216.6212,-121.0096C250.9311,-127.2231 300,-139.218 300,-157 300,-253.5 300,-253.5 300,-253.5 300,-331.7424 236,-339.2576 236,-417.5 236,-649 236,-649 236,-649 236,-660.2892 228.4211,-668.8741 218.9419,-675.1965"/>
+<polygon fill="#000000" stroke="#000000" points="217.1926,-672.165 210.2652,-680.1813 220.6797,-678.2346 217.1926,-672.165"/>
+<text text-anchor="start" x="237" y="-400" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Din_rdy &#160;&#160;</text>
+</g>
+<!-- ERROR&#45;&gt;ERROR -->
+<g id="edge18" class="edge transition">
+<title>ERROR&#45;&gt;ERROR</title>
+<path fill="none" stroke="#000000" d="M216.7219,-120.8676C228.6932,-120.9995 238.5,-119.377 238.5,-116 238.5,-113.6783 233.8647,-112.1859 227.0776,-111.5228"/>
+<polygon fill="#000000" stroke="#000000" points="226.8467,-108.0117 216.7219,-111.1324 226.583,-115.0067 226.8467,-108.0117"/>
+<text text-anchor="start" x="238.5" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">not (Din_rdy) &#160;&#160;</text>
+</g>
+</g>
+</svg>
+</div></div><br><br><br><br><br><br>
+    </article class="markdown-body">
+
+    </body>
+    
+    
